@@ -1,6 +1,9 @@
+import ModalBasic from "@/components/ModalBasic";
+
 export default function Home() {
   return (
-    <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 ">
+    <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 h-[85dvh] md:h-[90dvh]">
+      <ModalBasic/>
       <section
         className="h-[88dvh] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: "url('/map-image.jpg')" }}
