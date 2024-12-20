@@ -1,17 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import { Sidebar, SidebarBody, SidebarLink } from "./ui/sidebar";
-import {
-  IconArrowLeft,
-  IconBrandTabler,
-  IconSettings,
-  IconUserBolt,
-} from "@tabler/icons-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import logo from "@/public/logo.png";
+import { FaHome } from "react-icons/fa";
+import { PiMicrophoneFill } from "react-icons/pi";
+import { IoIosInformationCircle } from "react-icons/io";
 
 export function SidebarDemo()
  {
@@ -24,7 +21,7 @@ export function SidebarDemo()
       label: "Home",
       href: "/",
       icon: (
-        <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <FaHome className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
       onClick: handleLinkClick,
     },
@@ -32,7 +29,7 @@ export function SidebarDemo()
       label: "Stages",
       href: "/programme",
       icon: (
-        <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <PiMicrophoneFill className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
       onClick: handleLinkClick,
     },
@@ -40,14 +37,12 @@ export function SidebarDemo()
       label: "About",
       href: "/about",
       icon: (
-        <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IoIosInformationCircle className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
       onClick: handleLinkClick,
     },
   ];
   const [open, setOpen] = useState(false);
-
- 
 
   return (
     <div
@@ -84,7 +79,7 @@ export function SidebarDemo()
                 ),
               }}
             />
-            
+
           </div>
         </SidebarBody>
       </Sidebar>
@@ -118,5 +113,3 @@ export const LogoIcon = () => {
     </Link>
   );
 };
-
-
