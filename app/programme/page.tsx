@@ -32,7 +32,7 @@ const page: React.FC = () => {
   }, []);
 
   return (
-    <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900">
+    <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 h-[85dvh] md:h-[90dvh]">
       <Accordion type="single" collapsible>
       {stages.map((stage, index) => (
           <AccordionItem value={`item-${index + 1}`} key={stage}>

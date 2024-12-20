@@ -6,15 +6,15 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import logo from "@/public/logo.png";
+import pmsalogo from "@/public/pmsalogo.png";
 import { FaHome } from "react-icons/fa";
 import { PiMicrophoneFill } from "react-icons/pi";
 import { IoIosInformationCircle } from "react-icons/io";
 
-export function SidebarDemo()
- {
-   const handleLinkClick = () => {
-     setOpen(false); // Close the sidebar when a link is clicked
-   };
+export function SidebarDemo() {
+  const handleLinkClick = () => {
+    setOpen(false); // Close the sidebar when a link is clicked
+  };
 
   const links = [
     {
@@ -66,7 +66,7 @@ export function SidebarDemo()
           <div>
             <SidebarLink
               link={{
-                label: "B Zone",
+                label: "13th Wafy fest",
                 href: "/",
                 icon: (
                   <Image
@@ -92,7 +92,13 @@ export const Logo = () => {
       href="#"
       className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
     >
-      <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
+      <Image
+        src={pmsalogo}
+        className="h-7 w-7 flex-shrink-0 rounded-full"
+        width={50}
+        height={50}
+        alt="Avatar"
+      />
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
