@@ -1,8 +1,6 @@
 import { getSheetData } from "@/lib/sheets";
 import { NextApiRequest, NextApiResponse } from "next";
 
-const sheetId = process.env.GOOGLE_SHEET_ID as string;
-
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 
   if (req.method !== "GET") {
