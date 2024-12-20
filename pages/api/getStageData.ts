@@ -5,10 +5,23 @@ const sheetId = process.env.GOOGLE_SHEET_ID as string;
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 
-  const stage  = req.query.stage as string;
-  console.log(stage);
+  if (req.method !== "GET") {
+    res.setHeader("Allow", ["GET"]);
+    res.status(405).end(`Method ${req.method} Not Allowed`);
+    return;
+  }
+
+  const stage = req.query.stage as string;
+  const sheetId = process.env.GOOGLE_SHEET_ID as string;
+
+  if (!sheetId) {
+    console.error("Missing GOOGLE_SHEET_ID environment variable");
+    res.status(500).json({ error: "Server misconfiguration: Missing sheet ID" });
+    return;
+  }
 
   if (!stage) {
+    console.error("Missing GOOGLE_SHEET_ID environment variable");
     res.status(400).json({ error: "Stage parameter is required" });
     return;
   }
