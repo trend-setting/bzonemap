@@ -59,7 +59,8 @@ const page = () => {
           </a>
         </div>
       </div>
-      <br /><br />
+      <br />
+      <br />
       <div className="p-2 md:p-5 text-balance w-full flex justify-center">
         Designed By{" "}
         <span className="ml-1 mr-1 font-bold">
@@ -69,7 +70,7 @@ const page = () => {
         </span>
         |{" "}
         <span className="ml-1 font-bold">
-          <a href="https://m-salih3.github.io/mskcPortfolio/" target="_blank">
+          <a href="https://mskccv.vercel.app/" target="_blank">
             m_Salih_Kc
           </a>
         </span>
