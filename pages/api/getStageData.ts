@@ -4,7 +4,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 const sheetId = process.env.GOOGLE_SHEET_ID as string;
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-
+console.log('GOOGLE_SHEET_ID:', process.env.GOOGLE_SHEET_ID);
   const stage  = req.query.stage as string;
   console.log(stage);
 
