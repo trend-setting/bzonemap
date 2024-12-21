@@ -48,7 +48,7 @@ export function SidebarDemo() {
     <div
       className={cn(
         "rounded-md flex md:flex-row bg-gray-100 dark:bg-neutral-800  flex-1  mx-[2dvw] border border-neutral-200 dark:border-neutral-700 overflow-hidden",
-        "h-[6dvh] mt-[5dvh] md:h-[90dvh] md:w-[16dvw]" // for your use case, use `h-screen` instead of `h-[60vh]`
+        "h-[6dvh] mt-[5dvh] md:h-[90dvh] md:w-[16dvw] sm:min-w-64" // for your use case, use `h-screen` instead of `h-[60vh]`
       )}
     >
       <Sidebar open={open} setOpen={setOpen} animate={false}>
@@ -59,7 +59,11 @@ export function SidebarDemo() {
             </>
             <div className="mt-8 flex flex-col gap-2">
               {links.map((link) => (
-                <SidebarLink key={link.label} link={link} onClick={handleLinkClick} />
+                <SidebarLink
+                  key={link.label}
+                  link={link}
+                  onClick={handleLinkClick}
+                />
               ))}
             </div>
           </div>
@@ -79,7 +83,6 @@ export function SidebarDemo() {
                 ),
               }}
             />
-
           </div>
         </SidebarBody>
       </Sidebar>
