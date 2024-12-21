@@ -32,27 +32,40 @@ const page: React.FC = () => {
   }, []);
 
   return (
-    <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 h-[85dvh] md:h-[90dvh]">
+    <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 h-[85dvh] md:h-[90dvh] overflow-auto">
       <Accordion type="single" collapsible>
-      {stages.map((stage, index) => (
-          <AccordionItem value={`item-${index + 1}`} key={stage}>
-            <AccordionTrigger>{stage}</AccordionTrigger>
-          <AccordionContent>
-          {data[stage] ? (
-                <ul>
-                  {data[stage].map((row: string[], i: number) => (
-                    <li key={i}>
-                      <strong>Time:</strong> {row[0]} | <strong>Programme:</strong> {row[1]} | <strong>Status:</strong> {row[2]}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                "Loading..."
-              )}
-          </AccordionContent>
-        </AccordionItem>
-        ))}
-      </Accordion>
+  {stages.map((stage, index) => (
+    <AccordionItem value={`item-${index + 1}`} key={stage}>
+      <AccordionTrigger>{stage}</AccordionTrigger>
+      <AccordionContent>
+        {data[stage] ? (
+          <div className="relative overflow-hidden shadow-md rounded-lg">
+            <table className="table-fixed w-full text-left">
+              <thead className="uppercase bg-gray-600 text-gray-200">
+                <tr>
+                  <th className="py-1 border text-center font-bold p-4 text-xs sm:text-sm md:text-base">Time</th>
+                  <th className="py-1 border text-center font-bold p-4 text-xs sm:text-sm md:text-base">Programme</th>
+                  <th className="py-1 border text-center font-bold p-4 text-xs sm:text-sm md:text-base">Status</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white text-gray-600">
+                {data[stage].map((row: string[], i: number) => (
+                  <tr key={i} className="py-2">
+                    <td className="py-2 border text-center p-4 text-xs sm:text-sm">{row[0]}</td>
+                    <td className="py-2 border text-center p-4 text-xs sm:text-sm">{row[1]}</td>
+                    <td className="py-2 border text-center p-4 text-xs sm:text-sm">{row[2]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          "Loading..."
+        )}
+      </AccordionContent>
+    </AccordionItem>
+  ))}
+</Accordion>
     </div>
   );
 };
