@@ -8,7 +8,7 @@ import {
 
 const page = () => {
   return (
-    <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 h-[85dvh] md:h-[90dvh] flex flex-col justify-between overflow-hidden">
+    <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 h-[85dvh] md:h-[90dvh] flex flex-col justify-between overflow-x-scroll md:overflow-hidden text-balance">
       <div className="border-b border-neutral-200 dark:border-neutral-700 p-2 md:p-5">
         <h1 className="text-4xl font-bold">About Us</h1>
       </div>
@@ -59,6 +59,8 @@ const page = () => {
           </a>
         </div>
       </div>
+      <br />
+      <br />
       <div className="p-2 md:p-5 text-balance w-full flex justify-center">
         Designed By{" "}
         <span className="ml-1 mr-1 font-bold">
@@ -68,7 +70,7 @@ const page = () => {
         </span>
         |{" "}
         <span className="ml-1 font-bold">
-          <a href="https://m-salih3.github.io/mskcPortfolio/" target="_blank">
+          <a href="https://mskccv.vercel.app/" target="_blank">
             m_Salih_Kc
           </a>
         </span>
