@@ -2,8 +2,6 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import {
   FaLocationDot,
-  FaLocationPin,
-  FaLocationPinLock,
 } from "react-icons/fa6";
 
 const page = () => {
