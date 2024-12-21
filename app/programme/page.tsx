@@ -39,21 +39,21 @@ const page: React.FC = () => {
       <AccordionTrigger>{stage}</AccordionTrigger>
       <AccordionContent>
         {data[stage] ? (
-          <div className="relative overflow-hidden shadow-md rounded-lg">
+          <div className="relative overflow-hidden shadow-md">
             <table className="table-fixed w-full text-left">
-              <thead className="uppercase bg-gray-600 text-gray-200">
+              <thead className="uppercase bg-neutral-700 text-white">
                 <tr>
-                  <th className="py-1 border text-center font-bold p-4 text-xs sm:text-sm md:text-base">Time</th>
-                  <th className="py-1 border text-center font-bold p-4 text-xs sm:text-sm md:text-base">Programme</th>
-                  <th className="py-1 border text-center font-bold p-4 text-xs sm:text-sm md:text-base">Status</th>
+                  <th className="py-1 border border-black text-center font-bold p-4 text-xs sm:text-sm md:text-base">Time</th>
+                  <th className="py-1 border border-black text-center font-bold p-4 text-xs sm:text-sm md:text-base">Programme</th>
+                  <th className="py-1 border border-black text-center font-bold p-4 text-xs sm:text-sm md:text-base">Status</th>
                 </tr>
               </thead>
-              <tbody className="bg-white text-gray-600">
+              <tbody className="bg-neutral-600 text-white">
                 {data[stage].map((row: string[], i: number) => (
                   <tr key={i} className="py-2">
-                    <td className="py-2 border text-center p-4 text-xs sm:text-sm">{row[0]}</td>
-                    <td className="py-2 border text-center p-4 text-xs sm:text-sm">{row[1]}</td>
-                    <td className="py-2 border text-center p-4 text-xs sm:text-sm">{row[2]}</td>
+                    <td className="py-2 border border-black text-center p-4 text-xs sm:text-sm">{row[0]}</td>
+                    <td className="py-2 border border-black text-center p-4 text-xs sm:text-sm">{row[1]}</td>
+                    <td className="py-2 border border-black text-center p-4 text-xs sm:text-sm">{row[2]}</td>
                   </tr>
                 ))}
               </tbody>
