@@ -36,7 +36,7 @@ export default function Home() {
               onClick={() => setSelectedMarker(markerB)}
             >
               <span
-                className={`flex items-center justify-center rounded border border-black
+                className={`flex items-center justify-center
                 ${
                   markerB.id === 1
                     ? "w-6 h-5"
@@ -69,7 +69,7 @@ export default function Home() {
           onClick={() => setSelectedMarker(markerS)}
         >
           <span
-            className={`flex items-center justify-center rounded border border-black
+            className={`flex items-center justify-center
                 ${
                   markerS.id === 1
                     ? "w-6 h-5"
