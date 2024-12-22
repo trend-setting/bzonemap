@@ -13,21 +13,28 @@ const stages = ["STAGE - 1", "STAGE - 2", "STAGE - 3", "STAGE - 4", "STAGE - 5",
 type StageData = string[][];
 
 const fetchStageData = async (stage: string): Promise<StageData> => {
-  const response = await fetch(`api/getStageData?stage=${stage}`);
+  const response = await fetch(`/api/getStageData?stage=${stage}`);
+  if (!response.ok) {
+    console.error(`Failed to fetch data for ${stage}: ${response.statusText}`);
+    return [];
+  }
   return response.json();
 };
 
 const page: React.FC = () => {
   const [data, setData] = useState<Record<string, StageData>>({});
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadData = async () => {
       const stageData: Record<string, StageData> = {};
       for (let i = 1; i <= stages.length; i++) {
-        const stage = `stage${i}`;
-        stageData[stage] = await fetchStageData(stage);
+        const stageKey = `stage${i}`; // API expects lowercase keys
+        const stageDataFetched = await fetchStageData(stageKey);
+        stageData[`STAGE - ${i}`] = stageDataFetched; // Map to UI key
       }
       setData(stageData);
+      setLoading(false);
     };
     loadData();
   }, []);
@@ -39,7 +46,7 @@ const page: React.FC = () => {
           <AccordionItem value={`item-${index + 1}`} key={stage} className="text-2xl">
             <AccordionTrigger>{stage}</AccordionTrigger>
             <AccordionContent>
-              {data[stage] ? (
+              {data[stage] && !loading ? (
                 <div className="relative overflow-hidden shadow-md">
                   <table className="table-fixed w-full text-left">
                     <thead className="uppercase bg-neutral-700 text-white">
@@ -63,7 +70,9 @@ const page: React.FC = () => {
                                     ? "bg-red-700"
                                     : ""
                               }`}
-                          >{row[2]}</td>
+                          >
+                            {row[2]}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
