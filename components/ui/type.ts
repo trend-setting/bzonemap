@@ -3,5 +3,4 @@ interface Marker {
   title: string;
   description: string;
   image: string;
-  position: { top: string; left: string };
 }
