@@ -52,7 +52,7 @@ export default function Home() {
                     ? "w-6 h-5"
                     : markerB.id === 16
                     ? "w-8 h-10"
-                    : "bg-red-500 px-10 py-5"
+                    : "px-10 py-5"
                 }`}
               ></span>
             </div>
