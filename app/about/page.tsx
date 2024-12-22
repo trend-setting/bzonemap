@@ -30,7 +30,7 @@ const page = () => {
           <a
             href="https://www.instagram.com/wafypmsa_official/"
             target="_blank"
-            className="text-white flex columns-1"
+            className="flex columns-1"
           >
             <FaInstagram size={20} className="mr-2" />
             wafypmsa_official
@@ -40,7 +40,7 @@ const page = () => {
           <a
             href="https://youtube.com/@munthajulafnanstudentsasso6980?si=x3m_nrILHgMRXz9s"
             target="_blank"
-            className="text-white flex columns-1"
+            className="flex columns-1"
           >
             <FaYoutube size={20} className="mr-2" />
             Munthajul Afnan Students' Assosciation MASA
@@ -50,7 +50,7 @@ const page = () => {
           <a
             href="https://www.facebook.com/pmsawafy"
             target="_blank"
-            className="text-white flex columns-1"
+            className="flex columns-1"
           >
             <FaFacebook size={20} className="mr-2" />
             Pmsa Wafy
