@@ -4,5 +4,4 @@ interface Marker {
   description: string;
   image: string;
   position: { top: string; left: string };
-  hostel: string
 }

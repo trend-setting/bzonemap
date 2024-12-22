@@ -7,7 +7,6 @@ const markersmall: Marker[] = [
     description: "This is the campus store where you can buy essentials.",
     image: "/store.jpg",
     position: { top: "46%", left: "91%" },
-    hostel: 'mlar'
   },
   {
     id: 2,
@@ -15,7 +14,6 @@ const markersmall: Marker[] = [
     description: "The hostel block for students.",
     image: "/hostel.jpg",
     position: { top: "65%", left: "52%" },
-    hostel: 'mlar'
   },
   {
     id: 3,
@@ -23,7 +21,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 4,
@@ -31,7 +28,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 5,
@@ -39,7 +35,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 6,
@@ -47,7 +42,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 7,
@@ -55,7 +49,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 8,
@@ -63,7 +56,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 9,
@@ -71,7 +63,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 10,
@@ -79,7 +70,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 11,
@@ -87,7 +77,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 12,
@@ -95,7 +84,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 13,
@@ -103,7 +91,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 14,
@@ -111,7 +98,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 15,
@@ -119,7 +105,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 16,
@@ -127,7 +112,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 17,
@@ -135,7 +119,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 18,
@@ -143,7 +126,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 19,
@@ -151,7 +133,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
   {
     id: 20,
@@ -159,7 +140,6 @@ const markersmall: Marker[] = [
     description: "Enjoy a variety of meals and snacks here.",
     image: "/canteen.jpg",
     position: { top: "26%", left: "69%" },
-    hostel: 'piyush'
   },
 ];
 
