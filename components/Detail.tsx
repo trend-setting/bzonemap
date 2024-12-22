@@ -1,6 +1,7 @@
 'use client'
 import MapModal from "@/components/MapModel";
 import markerbig from "@/components/LargeData";
+import stagedata from "@/components/StageData";
 import { useState } from "react";
 
 import {
@@ -44,17 +45,13 @@ export function Detail() {
               <DropdownMenuSubTrigger>Stages</DropdownMenuSubTrigger>
               <DropdownMenuPortal>
                 <DropdownMenuSubContent>
-                  <DropdownMenuItem>Stage - 1</DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>Stage - 2</DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>Stage - 3</DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>Stage - 4</DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>Stage - 5</DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>Stage - 6</DropdownMenuItem>
+                  {stagedata.map((markerC) => (
+                    <DropdownMenuItem key={markerC.id} onClick={(e) => handleItemClick(e , markerC)}>
+                      <button>
+                        {markerC.title}
+                      </button>
+                    </DropdownMenuItem>
+                  ))}
                 </DropdownMenuSubContent>
               </DropdownMenuPortal>
             </DropdownMenuSub>

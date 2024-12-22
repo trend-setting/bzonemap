@@ -62,6 +62,20 @@ const page = () => {
       <div className="p-2 md:p-5 text-balance w-full flex justify-center">
         Designed By{" "}
         <span className="ml-1 mr-1 font-bold">
+          <a href="https://www.instagram.com/muhmmd__rayees__/" target="_blank">
+            Rayees
+          </a>{" "}
+        </span>
+        |{" "}
+        <span className="ml-1 font-bold">
+          <a href="https://www.instagram.com/muhd_sfyn_/" target="_blank">
+            Sufiyan
+          </a>
+        </span>
+      </div>
+      <div className="p-2 md:p-5 text-balance w-full flex justify-center">
+        Developed By{" "}
+        <span className="ml-1 mr-1 font-bold">
           <a href="https://mohdshuhaib.github.io/shuhaibcv/" target="_blank">
             Shuhaib
           </a>{" "}
