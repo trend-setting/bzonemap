@@ -30,13 +30,13 @@ const stagedata: Marker[] = [
     id: 5,
     title: "Stage - 5",
     description: "This is dynamic platforms designed to showcase a wide variety of events, including cultural performances, workshops, and smaller competitions.",
-    image: "https://github.com/trend-setting/gallery/blob/main/toilet.webp?raw=true",
+    image: "https://shorturl.at/xnVsq",
   },
   {
     id: 6,
     title: "Stage - 6",
     description: "This is dynamic platforms designed to showcase a wide variety of events, including cultural performances, workshops, and smaller competitions.",
-    image: "https://github.com/trend-setting/gallery/blob/main/toilet.webp?raw=true",
+    image: "https://shorturl.at/xnVsq",
   },
 
 ];
