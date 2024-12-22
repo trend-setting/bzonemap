@@ -14,24 +14,21 @@ export default function Home() {
       <Image
         src='https://github.com/trend-setting/gallery/blob/main/maplg.webp?raw=true'
         alt="map"
-        layout="fill"
-        objectFit="contain"
-        className="hidden md:block"
+        fill
+        className="hidden md:block object-contain"
       />
       <Image
         src='https://github.com/trend-setting/gallery/blob/main/mapsm.webp?raw=true'
         alt="map"
-        layout="fill"
-        objectFit="contain"
-        className="md:hidden"
+        fill
+        className="md:hidden object-contain"
       />
 
       {/* Markers Big*/}
       {markerbig.map((markerB) => (
-        console.log(markerB),
         <div
           key={markerB.id}
-          className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer text-black text-2xl"
+          className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer text-black text-2xl hidden md:block"
           style={{ top: markerB.position.top, left: markerB.position.left }}
           onClick={() => setSelectedMarker(markerB)}
         >
@@ -46,10 +43,12 @@ export default function Home() {
                 : markerB.id === 4
                 ? "w-6 h-5"
                 : markerB.id === 5
-                ? "w-6 h-50"
+                ? "w-6 h-5"
                 : markerB.id === 6
                 ? "w-6 h-5"
-                : "bg-red-500 px-10 py-5"
+                : markerB.id === 16
+                ? "w-8 h-10"
+                : "px-10 py-5"
               }`}
           ></span>
         </div>
