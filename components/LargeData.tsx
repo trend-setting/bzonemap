@@ -15,7 +15,7 @@ const markerbig: Marker[] = [
   },
   {
     id: 3,
-    title: "Clok Room",
+    title: "Cloak Room",
     description: "Staffed by attentive personnel, it ensures that attendees can safely store their belongings, such as bags, coats, or other personal items, while they immerse themselves in the fest activities.",
     image: "https://shorturl.at/xnVsq",
   },
