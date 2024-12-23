@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { IoIosArrowRoundForward } from "react-icons/io";
 import ReactModal from "react-modal";
 
 interface ModalProps {
@@ -11,6 +13,9 @@ interface ModalProps {
 }
 
 const MapModal: React.FC<ModalProps> = ({ isOpen, onClose, title, imageSrc, description }) => {
+  const handleRedirect = () => {
+    onClose(); // Close the modal
+  };
   return (
     <ReactModal
       isOpen={isOpen}
@@ -55,12 +60,20 @@ const MapModal: React.FC<ModalProps> = ({ isOpen, onClose, title, imageSrc, desc
               className="rounded-md border-4 border-slate-200"
             />
           </div>
-          <div id="content-3a" className="text-center text-sm text-slate-800">
+          <div id="content-3a" className="text-center text-sm text-slate-900">
             <p>
-              {description}
+            {description}
+              {description === "Explore the vibrant energy of each stage and dive into the ongoing performances, workshops, and events happening live. Don’t miss out on the action." && (
+                <Link
+                  href="/programme"
+                  className="flex items-center justify-center gap-1 text-sky-500"
+                  onClick={handleRedirect}
+                >
+                  visit the stage programme page <IoIosArrowRoundForward />
+                </Link>
+              )}
             </p>
           </div>
-
         </div>
       </div>
     </ReactModal>
